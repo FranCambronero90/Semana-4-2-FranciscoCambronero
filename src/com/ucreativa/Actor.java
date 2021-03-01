@@ -9,25 +9,21 @@ package com.ucreativa;
  */
 public interface Actor {
 
-	public static final String NombreArtistico = "Bethoveen";
-	public static final int  anniosExperiencia = 20;
-	public static final String TipoActor = "Secundario";
-	
-	
-	//Metodos
+	public static final String nombreArtistico = "Jhonny Depp";
+	public static final int añosExperiencia = 30;
+	public static final String tipo = "Principal";
 	
 	abstract void actuar();
+	
 	abstract void divertir();
+	
 	abstract void desaparecer();
 	
-	static String Identificador() {
-		return "Yo soy un Actor";
+	static String identificador() {
+		return "Yo soy un actor";
+
 	}
+
 	
-	
-	// Overrides y otros
-	
-	@Override 
-	String ToString();
-	void finalize() throws Throwable;
+
 }
